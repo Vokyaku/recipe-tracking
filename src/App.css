@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.App {
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header > h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+/* typography */
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff8df;
+}
+
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+/* Column Size for thead */
+thead th:first-child {
+  width: 100px;
+}
+
+/* Column size for tbody */
+tbody td:first-child {
+  width: 50px;
+}
+
+/* Additional layout adjustments to improve appearance */
+.recipe-list img {
+  max-width: 100px; /* Set the maximum width for the images */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1;
+  padding: 10px;
+}
+
+.row > div:first-child {
+  flex: 0 0 100px; /* Adjust the width of the first column as needed */
+}
+
+/* Style for the filled boxes on the row below */
+.filled-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust alignment as needed */
+  gap: 10px; /* Adjust the gap between filled boxes */
+}
+
+.filled-box {
+  flex: 1;
+  max-width: calc(33.33% - 10px); /* Adjust the width and gap as needed */
+  background-color: #f0f0f0; /* Set the background color for filled boxes */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc; /* Add borders as desired */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  max-width: 40px
+}
